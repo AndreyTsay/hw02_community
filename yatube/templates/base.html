@@ -1,7 +1,4 @@
 {% load static %}
-{% block title %}
-{{title}}
-{% endblock %}
 </head>
 <body>
   <header>
@@ -9,6 +6,11 @@
   </header>
   <main>
     <div class="container">
+      <h1>
+        {% block title %}
+       {{title}}
+       {% endblock %}
+       </h1>
       {% block content %} 
       Контент не подвезли
       {% endblock %} 
