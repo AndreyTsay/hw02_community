@@ -6,12 +6,12 @@
   </header>
   <main>
     <div class="container">
+      {% block title %}
       <h1>
-        {% block title %}
-       {{title}}
-       {% endblock %}
-       </h1>
-      {% block content %} 
+      Новая страница сайта дневников Yatube
+     </h1> 
+     {% endblock %}
+      {% block content %}
       Контент не подвезли
       {% endblock %} 
     </div>
