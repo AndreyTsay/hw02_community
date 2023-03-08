@@ -1,17 +1,19 @@
 {% load static %}
-</head>
+{% block title %}
+<title>
+  Загололок не подвезли
+</title> 
+{% endblock %}
 <body>
   <header>
     {% include 'includes/header.html' %}
   </header>
   <main>
     <div class="container">
-      {% block title %}
-      <h1>
-      Новая страница сайта дневников Yatube
-     </h1> 
-     {% endblock %}
       {% block content %}
+      <h1>
+        Новая страница сайта дневников Yatube
+       </h1> 
       Контент не подвезли
       {% endblock %} 
     </div>

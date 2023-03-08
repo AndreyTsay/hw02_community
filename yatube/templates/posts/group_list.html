@@ -1,10 +1,9 @@
 {% extends 'base.html' %}
 {% block title %}
-<h1>
-  Лев Толстой – зеркало русской революции.
- </h1> 
+<title>{{group.title}}</title>
 {% endblock %}
 {% block content %}
+<h1>{{group.title}}</h1> 
 {% for post in posts %}
   <ul>
     <li>
